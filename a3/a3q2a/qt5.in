@@ -1,0 +1,22 @@
+f a
+f b
+= a b
+w a
+w b
+e a
+e b
+f a
+f b
+i a b
+w a
+w b
+r a 123
+w a
+i a b
+w a
+r b 123
+w b
+= b a
+w b
+e a
+e b

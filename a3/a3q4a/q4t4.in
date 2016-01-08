@@ -1,0 +1,13 @@
+game a.txt stdin
+W
+E
+S
+SE
+SW
+game stdin b.txt
+W
+NW
+SW
+game a.txt b.txt
+game a.txt b.txt
+quit

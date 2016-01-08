@@ -1,0 +1,14 @@
+r a 123
+w a
+l a
+t b a 456
+w b
+s c a b
+w c
+* d 2 c
+w d
+e a
+e b
+e c
+e d
+q

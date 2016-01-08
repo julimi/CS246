@@ -1,0 +1,12 @@
+game stdin stdin
+C
+N
+W
+E
+S
+SE
+NE
+SW
+NW
+game c.txt c.txt
+quit

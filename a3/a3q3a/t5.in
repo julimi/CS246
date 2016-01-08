@@ -1,0 +1,12 @@
++ abc
+? a
+$
++ ab
+$
+? a
++ ba
+$
++ bab
+? b
+include cmds1.txt
+? b

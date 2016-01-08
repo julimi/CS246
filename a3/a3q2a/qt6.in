@@ -1,0 +1,12 @@
+n a 123
+w a
+* b 0 a
+w b
+t b b 12 34
+t b b "12 34"
+e a
+e b
+n c 123
+t c c 12 34
+e c
+q
