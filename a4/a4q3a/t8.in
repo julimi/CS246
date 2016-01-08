@@ -1,0 +1,4 @@
+stdin doublewords dropfirst 2 count k allcaps doublewords
+123
+ABC
+abc
