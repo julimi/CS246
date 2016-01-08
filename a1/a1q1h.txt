@@ -1,0 +1,1 @@
+sort -r myfile.txt | cut -c 8- | sort -r | uniq -c | sort -nr

@@ -1,0 +1,31 @@
+#!/bin/bash
+
+if [ ${#} -ne 2 ]; then
+    echo "Incorrect number of command line arguments." 1>&2
+    exit 1
+fi
+
+for name in `cat $1`; do
+   if [ ! -r "${name}.in" ]; then
+       echo "${name}.in doesn't exist or is unreadable." 1>&2
+       exit 1
+   fi
+   if [ ! -r "${name}.out" ]; then
+       echo "${name}.out doesn't exist or is unreadable." 1>&2
+       exit 1
+   fi
+
+   tem=`mktemp`
+   $2 < "${name}.in" > $tem
+   diff "${name}.out" ${tem} > /dev/null
+   if [ $? -ne 0 ]; then
+       echo "Test failed: ${name}"
+       echo "Input:"
+       cat "${name}.in"
+       echo "Expected:"
+       cat "${name}.out"
+       echo "Actual:"
+       cat $tem
+   fi
+   rm ${tem}
+done

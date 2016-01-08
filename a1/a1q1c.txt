@@ -1,0 +1,1 @@
+egrep "[sS][tT][uU][dD][eE][nN][tT][.][cC][sS][.][uU][wW][aA][tT][eE][rR][lL][oO][oO][.][cC][aA]" myfile.txt | wc -l

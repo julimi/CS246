@@ -1,0 +1,1 @@
+cat abc.txt | egrep a | egrep e | egrep i | egrep o | egrep u

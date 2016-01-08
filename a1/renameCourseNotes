@@ -1,0 +1,19 @@
+#!/bin/bash
+year=`date +%y`
+ses=`date +%m`
+month=`expr $ses`
+file="CS ***.pdf"
+for name in $file; do
+    if [ $month -le 4 ]; then
+       mv "${name}" "${name/CS /W${year}_CS}"
+    elif [ $month -le 8 ]; then
+       mv "${name}" "${name/CS /S${year}_CS}"
+    else
+       mv "${name}" "${name/CS /F${year}_CS}"
+    fi
+done
+
+newfile="***_CS***.pdf"
+for newname in $newfile; do
+       mv "${newname}" "${newname/.pdf/_Notes.pdf}"
+done
