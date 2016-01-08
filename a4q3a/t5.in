@@ -1,0 +1,3 @@
+allnum.txt allcaps dropfirst 2 count k doublewords
+alllower.txt allcaps dropfirst 2 count k doublewords
+allupper.txt allcaps dropfirst 2 count k doublewords
